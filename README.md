@@ -10,14 +10,14 @@ Install and configure the [Jumbleberry Development Environment](https://github.c
 1. Execute the passgen script in from the terminal:  
         ``` 
 python passgen.py 
-        ```
-2. Follow along the prompts by choosing a unique password. This will be used for the sole purpose of granting `sudo` access on Jumbleberry infrastructure.
-3. Append the generated hash to the end of the `shadowers` file, and commit it.
+        ```  
+2. Follow along the prompts by choosing a unique password. This will be used for the sole purpose of granting `sudo` access on Jumbleberry infrastructure.  
+3. Append the generated hash to the end of the `shadowers` file, and commit it.  
 
 ##### SSH
 1. Generate a new SSH key. Make sure the key you generate has a secure passphrase.  
-        ssh-keygen -t rsa -C "your_email@jumbleberry"
-2. Locate the public key for the generated SSH key. Usually found in `~/.ssh/`.
+        ssh-keygen -t rsa -C "your_email@jumbleberry"  
+2. Locate the public key for the generated SSH key. Usually found in `~/.ssh/`.  
 3. Locate the `comment` field on the generated SSH key (the very last string found in the public key file), and replace it with a string of the form DDMMYYYY_your_email@jumbleberry.com  
 Ex.   
 ````
